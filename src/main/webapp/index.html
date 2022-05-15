@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Asiakkaat</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <!-- simple classless CSS stylesheet, see: https://github.com/oxalorg/sakura -->
+    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+    
+</head>
+
+<body>
+    <h2>Asiakkaat</h2>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Etunimi</th>
+                <th>Sukunimi</th>
+            </tr>
+        </thead>
+        <tbody id="asiakaslistaus">
+            <!--
+               Asiakasrivit lisätään tähän dynaamisesti JavaScriptillä. 
+            -->
+        </tbody>
+    </table> 
+    <template id="asiakasrivi-template">   
+        <tr>
+        	<td class="etunimi"></td>
+        	<td class="sukunimi"></td>
+        </tr>
+    </template>
+    <script src="js/sovellus2.js"></script>
+
+</body>
+
+</html>
